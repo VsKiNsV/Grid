@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+p{
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+
+.main__nav {
+    background-color: #bbb;
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    bottom: 1rem;
+    text-align: center;
+    bottom: 0;
+}
+
+.main-nav__container{
+    top:100%;
+    height:100%; 
+}
+
+.main-nav__item{
+    margin: 2rem ;
+    display: inline-block;
+}
+
+.main-nav__item a{
+    background-color: #bbb;
+    color:azure;
+    width: 1rem;
+    padding: 2rem;
+    border-radius: rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*    -----------------------   */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+}
+
+.title{
+    grid-row: span 3;
+}
+
+@media screen and (max-width: 90rem) { 
+.grid {
+    grid-template-columns: 1fr;
+}
+.title {
+    grid-row: span 1;
+}
+}
+
+
+/* ------------ */ 
+
+
+.title {
+    background-color: #eee;
+    padding-top: 4rem;
+    max-width: none;
+    margin-inline: auto;
+    width: 100%;
+    height: 50rem;
+}
+
+.main-title {
+    font-size: 4rem;
+    line-height: 1;
+	width: 8rem;
+    
+}
+
+.main_inf{
+    margin-inline: auto;
+    max-width: auto;
+}
+
+.main-inf{
+    position: absolute;
+    width: 30%;
+    height: 50rem;
+    top: 35%;
+    left: 10rem;
+}
+
+/* ------------- */
+
+.title2{
+    padding-top: 3rem;
+    margin-inline:initial right; 
+    width: 50%;
+    z-index: 100;  
+    text-align: left;
+    max-width: auto;
+}
+
+.main-title2{
+    width: 50%;
+    top: 10%;
+    font-size: 2rem;
+    text-align: left;
+    line-height: 1;
+    width: 10rem;
+}
+
+
+.main-inf2{
+    position: absolute;
+    width:30%;
+    height:60rem;
+    top: 30%;
+}
+
+/* --------------------- */
+
+.main-galeria{
+    background-color: #999;
+}
+
+.galeria2{
+    color: #fff;
+	font-weight: 400;
+    font-size: 3rem;
+}
+
+.fotos { 
+    padding: 2rem;
+	text-align: center;
+    position: absolute;
+    top: 59%;
+    left: 50%;
+}
+
+.foto {
+    width: 7rem;
+	height: 7rem;
+	background-color: #fff;
+	display: inline-block;
+	border-radius: .5rem;
+	box-shadow: 0 0 .3rem rgba(0 0 0 / .5);
+	margin: 1rem;
+}
